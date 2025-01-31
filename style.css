@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+.sub-header {
+    padding: 8px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(4, 4, 146);
+    color: #fff;
+}
+
+.sub-header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.sub-header ul li {
+    font-size: 0.8rem;
+}
+
+.sub-header a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.sub-header a:hover {
+    color: blue;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.main-header a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.main-header a img {
+    width: 50px;
+    height: 50px;
+}
+
+.main-header a h5 {
+    font-weight: 600;
+    line-height: 0.8;
+}
+
+.navLink .nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+.navLink .nav .service {
+    position: relative;
+}
+.navLink .nav .service .service-dropdown {
+    position: absolute;
+    list-style: none;
+    /* width: 250px; */
+    top: 20px;
+    background-color: #edecec;
+    border-radius: 5px;
+}
+.service .service-dropdown ul{
+    list-style: none;
+}
+.service .service-dropdown ul li{
+    padding: 5px 15px;
+    text-wrap: nowrap;
+    border-bottom: 2px solid #ccc;
+}
+.service .service-dropdown ul li:hover {
+    background-color: rgb(30, 3, 181);
+}
+.service .service-dropdown ul li:hover a{
+    color: #fff;
+}
+.service .service-dropdown ul li a {
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+.navLink a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navLink a:hover {
+    color: rgb(42, 42, 250);
+}
+
+.navLink button {
+    padding: 10px 15px;
+    border: none;
+}
+
+.navLink .login {
+    background-color: rgb(243, 69, 39);
+}
+
+.navLink .help {
+    background-color: rgb(241, 205, 5);
+}
