@@ -67,6 +67,9 @@
 .navLink .nav .service {
     position: relative;
 }
+.navLink .nav .service:hover .service-dropdown{
+    display: block;
+}
 .navLink .nav .service .service-dropdown {
     position: absolute;
     list-style: none;
@@ -74,6 +77,8 @@
     top: 20px;
     background-color: #edecec;
     border-radius: 5px;
+    display: none;
+    z-index: 1;
 }
 .service .service-dropdown ul{
     list-style: none;
@@ -107,6 +112,7 @@
     padding: 10px 15px;
     border: none;
 }
+
 
 .navLink .login {
     background-color: rgb(243, 69, 39);

@@ -21,7 +21,104 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    
+    #LandingPage {
+        position: relative;
+        height: 67.5vh;
+        display: flex;
+        place-items: center;
+    }
+    #LandingPage img {
+        width: 100%;
+        position: absolute;
+    }
+    #LandingPage .content {
+        position: absolute;
+        width: 50%;
+        color: #fff;
+        /* transform: translateY(50%);
+        top: 15%;*/
+        left: 65px; 
+        /* margin-top: 15%; */
+    }
+    #LandingPage .content h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    #LandingPage .content p {
+        margin: 10px 0;
+    }
+    #LandingPage .content button {
+        padding: 10px 50px;
+        border: none;
+        color: #fff;
+        background-color: rgb(251, 25, 40);
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+    #LandingPage .nav-buttons {
+        position: absolute;
+        width: 100%;
+        transform: translateY(50%);
+        display: flex;
+        justify-content: space-between;
+
+    }
+    #LandingPage .nav-buttons button {
+        background-color: #fff;
+        border: none;
+        /* padding: 30px; */
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        border-radius: 50px;
+        color: rgb(34, 34, 127);
+    }
+    #LandingPage .nav-buttons button:hover {
+        background-color: rgb(116, 136, 130);
+        color: #fff;
+        cursor: pointer;
+    }
+    #AboutUs {
+        display: flex;
+        justify-content: space-around;
+    }
+    #AboutUs div {
+        border: 2px solid red;
+        width: 46%;
+    }
+
+    #AboutUs .content, #Capabilities .content {
+        padding: 70px 0;
+    }
+    #AboutUs .content h2, #Capabilities .content h2 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: rgb(26, 26, 86);
+        line-height: 1;
+    }
+    #AboutUs .content p, #Capabilities .content p{
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+    #AboutUs .content button,  #Capabilities .content button {
+        border: none;
+        padding: 8px 40px;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        background: #fde1d7;
+        color: tomato;
+    }
+    #Capabilities {
+        height: 90vh;
+        padding: 100px 65px;
+        background-color: #fff7f5;
+    }
+    #Capabilities .content {
+        width: 50%;
+    }
 </style>
 
 <body>
@@ -79,6 +176,73 @@
             </div>
         </div>
     </header>
+
+
+    <section id="LandingPage">
+        <img src="Images/home-banner2.jpg" alt="">
+        <div class="content">
+            <h1>Innovative Logo Design & Branding Solution</h1>
+            <p>We are commited towards providing professional 
+                logo design tailored to your brand culture core 
+                value and disinction.</p>
+            <button>Get Started</button>
+        </div>
+        <div class="nav-buttons">
+            <button class="prev"><i class="ri-arrow-left-s-line"></i></button>
+            <button class="next"><i class="ri-arrow-right-s-line"></i></button>
+        </div>
+    </section>
+
+
+    <section id="AboutUs">
+        <div>
+            <img src="Images/our-about.png" alt="">
+        </div>
+        <div class="content">
+            <h5>
+                <img src="Icons/heading-before.png" alt="">
+                About Us
+            </h5>
+            <h2>Creative design is </h2> <h2>our passion </h2>
+            <p>Logo Knox produces high-end solutions at affordable and market-competitive rates in logo design, website development, digital marketing, brochure design and production of animated videos</p>
+            
+            <br>
+            <p>
+                Logo Knox is different from many digital product development and 
+                marketing companies that provide ordinary and basic designing and 
+                development services. We are a premier hub for creative ideas and 
+                dynamic interactive solutions. With a results-driven approach at the 
+                core of our operations, our teams solve complex and sophisticated 
+                problems with highly advanced digital solutions and streamlined production process.
+            </p>
+            <button>Read More</button>
+        </div>
+    </section>
+
+
+    <section id="Capabilities"> 
+        <div class="content">
+            <h5>
+                <img src="Icons/heading-before.png" alt="">
+                Our capabilities
+            </h5>
+            <h2>Creating Digital Success</h2> <h2>Stories Everyday </h2>
+            <p>Our team comprises of inventive and artistic group of 
+                designers, who excel in producing impressive, original 
+                logos in line with brand identity and company image. 
+                When it comes to website development, our webpage designers 
+                create unique design pages and layouts using their creative 
+                talents. Engaging website designs are produced with the 
+                overall look and feel, along with the color schemes, exactly 
+                as you want. With highly advanced animation techniques, Logo 
+                Knox can deliver targeted messaging about complex products 
+                and services in animated videos. We are a full-fledged 
+                digital agency that helps businesses achieve measurable 
+                results in all our focus areas
+            </p>
+            <button>Get Start</button>
+        </div>
+    </section>
 
 </body>
 
