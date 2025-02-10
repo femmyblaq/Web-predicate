@@ -21,166 +21,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    #LandingPage {
-        position: relative;
-        height: 67.5vh;
-        display: flex;
-        place-items: center;
-    }
 
-    #LandingPage img {
-        width: 100%;
-        position: absolute;
-    }
-
-    #LandingPage .content {
-        position: absolute;
-        width: 50%;
-        color: #fff;
-        /* transform: translateY(50%);
-        top: 15%;*/
-        left: 65px;
-        /* margin-top: 15%; */
-    }
-
-    #LandingPage .content h1 {
-        font-size: 2.8rem;
-        font-weight: 700;
-    }
-
-    #LandingPage .content p {
-        margin: 10px 0;
-    }
-
-    #LandingPage .content button {
-        padding: 10px 50px;
-        border: none;
-        color: #fff;
-        background-color: rgb(251, 25, 40);
-        border-radius: 50px;
-        font-size: 1rem;
-        font-weight: 600;
-        margin: 15px 0;
-    }
-
-    #LandingPage .nav-buttons {
-        position: absolute;
-        width: 100%;
-        transform: translateY(50%);
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    #LandingPage .nav-buttons button {
-        background-color: #fff;
-        border: none;
-        /* padding: 30px; */
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-        border-radius: 50px;
-        color: rgb(34, 34, 127);
-    }
-
-    #LandingPage .nav-buttons button:hover {
-        background-color: rgb(116, 136, 130);
-        color: #fff;
-        cursor: pointer;
-    }
-
-    #AboutUs {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #AboutUs div {
-        width: 46%;
-    }
-
-    #AboutUs .content,
-    #Capabilities .content {
-        padding: 70px 0;
-    }
-
-    #AboutUs .content h2,
-    #Capabilities .content h2 {
-        font-size: 2.5rem;
-        font-weight: 900;
-        color: rgb(26, 26, 86);
-        line-height: 1;
-    }
-
-    #AboutUs .content p,
-    #Capabilities .content p {
-        margin-top: 15px;
-        font-size: 0.8rem;
-    }
-
-    #AboutUs .content button,
-    #Capabilities .content button {
-        border: none;
-        padding: 8px 40px;
-        border-radius: 20px;
-        font-weight: 600;
-        margin-top: 20px;
-        background: #fde1d7;
-        color: tomato;
-    }
-
-    #Capabilities {
-        height: 90vh;
-        padding: 100px 65px;
-        background-color: #fff7f5;
-        display: flex;
-        gap: 20px;
-        margin: 50px 0;
-    }
-
-    #Capabilities .content {
-        width: 50%;
-    }
-
-    #Capabilities .services {
-        display: flex;
-        gap: 10px;
-        width: 50%;
-    }
-
-    #Capabilities .services .logo-design,
-    .web-dev,
-    .video-animation,
-    .mobile-app,
-    .creative-copy,
-    .digi-mark,
-    .ill-design,
-    .mark-col,
-    .seo-services {
-        width: 180px;
-        height: 150px;
-        background-color: #fff;
+    #ourPortfolio {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+    #ourPortfolio h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: rgb(26, 26, 86);;
+    }
+    #ourPortfolio ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    #ourPortfolio ul li {
+        height: 35px;
+        padding: 5px 25px;
+        display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 5px 5px 20px #ddd;
+        border-radius: 30px;
+        cursor: pointer;
     }
-
-    #Capabilities .services a {
-        text-decoration: none;
-        color: #000;
-        margin: 20px;
+    #ourPortfolio ul li.active {
+        background-color: #fde1d7;
+        color: tomato;
+        font-weight: 500;
     }
-
-    #Capabilities .services .logo-design:hover, .web-dev:hover,
-    .video-animation:hover,
-    .mobile-app:hover,
-    .creative-copy:hover,
-    .digi-mark:hover,
-    .ill-design:hover,
-    .mark-col:hover,
-    .seo-services:hover {
-        border-top: 3px solid tomato;
+    .tabs-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 80%;
+        margin: 20px 0;
+    }
+    .tabs-content img{
+        width: 100%;
+    }
+    #ourPortfolio button {
+        border: none;
+        height: 40px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: tomato;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    #branding {
+        height: 60vh;
+        background-color: rgb(73, 5, 137);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 
@@ -379,6 +281,62 @@
         </div>
     </section>
 
+    <section id="ourPortfolio">
+        <h5>
+            <img src="Icons/heading-before.png" alt="">
+            Our capabilities
+        </h5>
+        <h1>Our work Porfolio</h1>
+        <div class="tabs">
+            <ul>
+                <li class="active">Logo</li>
+                <li>Website</li>
+                <li>Branding</li>
+                <li>Illustration</li>
+                <li>Video</li>
+            </ul>
+         </div>
+         <div class="tabs-content">
+            <img src="Images/h1.jpg" alt="">
+            <img src="Images/h2.jpg" alt="">
+            <img src="Images/h3.jpg" alt="">
+            <img src="Images/h4.jpg" alt="">
+            <img src="Images/h5.jpg" alt="">
+            <img src="Images/h6.jpg" alt="">
+            <img src="Images/h7.jpg" alt="">
+            <img src="Images/h7.jpg" alt="">
+         </div>
+
+         <button>View More</button>
+    </section>
+
+
+    <section id="branding">
+        <div>
+            <img style="width: 200px;" src="Images/combo-pack-branding.png" alt="">
+            <h4>LOGO</h4>
+            <ul>
+                <li>Unlimited Concepts</li>
+                <li>Unlimited Revisions</li>
+            </ul>
+            <h4>WEBSITE</h4>
+            <ul>
+                <li>2 Concept</li>
+                <li>Unlimited pages</li>
+            </ul>
+            <h4>STATIONERY</h4>
+            <ul>
+                <li>3 Concept</li>
+                <li>Unlimited Revisions</li>
+            </ul>
+        </div>
+        <img src="Images/combo-image.png" alt="">
+        <div>
+            <ul>
+
+            </ul>
+        </div>
+    </section>
 </body>
 
 </html>
