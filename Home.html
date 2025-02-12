@@ -21,23 +21,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-
     #ourPortfolio {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100vh;
     }
+
     #ourPortfolio h1 {
         font-size: 2.5rem;
         font-weight: 900;
-        color: rgb(26, 26, 86);;
+        color: rgb(26, 26, 86);
     }
+
     #ourPortfolio ul {
         list-style: none;
         display: flex;
         gap: 20px;
     }
+
     #ourPortfolio ul li {
         height: 35px;
         padding: 5px 25px;
@@ -47,11 +49,13 @@
         border-radius: 30px;
         cursor: pointer;
     }
+
     #ourPortfolio ul li.active {
         background-color: #fde1d7;
         color: tomato;
         font-weight: 500;
     }
+
     .tabs-content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -59,9 +63,11 @@
         width: 80%;
         margin: 20px 0;
     }
-    .tabs-content img{
+
+    .tabs-content img {
         width: 100%;
     }
+
     #ourPortfolio button {
         border: none;
         height: 40px;
@@ -77,12 +83,125 @@
         margin-top: 10px;
         cursor: pointer;
     }
+
     #branding {
         height: 60vh;
-        background-color: rgb(73, 5, 137);
+        /* width: 100%; */
+        padding: 20px 100px;
+        background-color: rgb(81, 29, 237);
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    #branding .brandPromo {
+        width: 700px;
+        height: 300px;
+    }
+
+    #branding ul {
+        list-style: none;
+    }
+
+    #branding li {
+        font-size: 0.8rem;
+        margin: 10px 0;
+        color: #fff;
+    }
+
+    #branding h4 {
+        color: gold;
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+
+    #branding button {
+        height: 35px;
+        width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #fff;
+        border: none;
+        border-radius: 40px;
+        background-color: rgb(230, 22, 91);
+        margin: 20px 0;
+        box-shadow: 5px 10px 12px #000;
+    }
+
+    #branding a {
+        color: #fff;
+        font-size: 0.8rem;
+        text-wrap: nowrap;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    #ourClient {
+        height: 50vh;
+        padding: 20px 40px;
+        display: flex;
+        gap: 10px;
+        position: relative;
+    }
+
+    #ourClient .title {
+        width: 30%;
+    }
+
+    #ourClient h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: rgb(26, 26, 86);
+    }
+    #ourClient .feedback h1 {
+        font-size: 8rem;
+        font-weight: 900;
+        color: rgb(81, 29, 237);
+        opacity: 20%;
+        border: 2px solid red;
+        position: relative;
+        text-align: center;
+    }
+    #ourClient .feedback .card-group {
+        display: flex;
+        gap: 15px;
+        border: 2px solid blue;
+        position: absolute;
+        top: 120px;
+
+    }
+    #ourClient .feedback .card {
+        width: 230px;
+        height: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 15px #ccc;
+        background-color: #fff;
+    }
+    #ourClient .feedback .card p {
+        font-size: 0.8rem;
+        text-align: justify;
+
+    }
+    #ourClient .feedback .card .card-bottom {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    #ourClient .feedback .card .profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(230, 22, 91);
+        color: #fff;
+        font-weight: 600;
     }
 </style>
 
@@ -295,8 +414,8 @@
                 <li>Illustration</li>
                 <li>Video</li>
             </ul>
-         </div>
-         <div class="tabs-content">
+        </div>
+        <div class="tabs-content">
             <img src="Images/h1.jpg" alt="">
             <img src="Images/h2.jpg" alt="">
             <img src="Images/h3.jpg" alt="">
@@ -305,16 +424,16 @@
             <img src="Images/h6.jpg" alt="">
             <img src="Images/h7.jpg" alt="">
             <img src="Images/h7.jpg" alt="">
-         </div>
+        </div>
 
-         <button>View More</button>
+        <button>View More</button>
     </section>
 
 
     <section id="branding">
         <div>
-            <img style="width: 200px;" src="Images/combo-pack-branding.png" alt="">
-            <h4>LOGO</h4>
+            <img style="width: 150px;" src="Images/combo-pack-branding.png" alt="">
+            <h4 style="margin-top: 30px;">LOGO</h4>
             <ul>
                 <li>Unlimited Concepts</li>
                 <li>Unlimited Revisions</li>
@@ -330,11 +449,95 @@
                 <li>Unlimited Revisions</li>
             </ul>
         </div>
-        <img src="Images/combo-image.png" alt="">
+        <img class="brandPromo" src="Images/combo-image.png" alt="">
         <div>
+            <h4>BROCHURE</h4>
             <ul>
+                <li>3 Concepts with Unlimited Color Options
 
+                    Unlimited Revisions</li>
             </ul>
+            <h4>BANNERS</h4>
+            <ul>
+                <li>2 Concepts of any Standard Size
+
+                    Unlimited Revisions</li>
+            </ul>
+            <h4>SOCIAL MEDIA DESIGN</h4>
+            <ul>
+                <li>Any 3 of Your Choice
+                    (Facebook, LinkedIn,
+                    Twitter, YouTube)</li>
+            </ul>
+
+            <button>Order Now</button>
+            <a href="">CLICK HERE FOR FREE CONSULTATION</a>
+        </div>
+    </section>
+
+    <section id="ourClient">
+        <div class="title">
+            <h5>
+                <img src="Icons/heading-before.png" alt="">
+                Our Clients
+            </h5>
+            <h1>What our client says about us</h1>
+        </div>
+        <div class="feedback">
+            <h1>Our Client</h1>
+            <div class="card-group">
+                <div class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sit autem voluptatem totam repudiandae
+                        optio cum porro, dolore, esse, modi 
+                        tempore sint nostrum.</p>
+
+                    <div class="card-bottom">
+                        <div class="profile">
+                            JB
+                        </div>
+                        <div>
+                            <h6>Jason Bradt</h6>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sit autem voluptatem totam repudiandae
+                        optio cum porro, dolore, esse, modi 
+                        tempore sint nostrum.</p>
+
+                    <div class="card-bottom">
+                        <div class="profile">
+                            JB
+                        </div>
+                        <div>
+                            <h6>Jason Bradt</h6>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sit autem voluptatem totam repudiandae
+                        optio cum porro, dolore, esse, modi 
+                        tempore sint nostrum.</p>
+
+                    <div class="card-bottom">
+                        <div class="profile">
+                            JB
+                        </div>
+                        <div>
+                            <h6>Jason Bradt</h6>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 </body>
