@@ -162,14 +162,14 @@
         font-weight: 900;
         color: rgb(81, 29, 237);
         opacity: 20%;
-        border: 2px solid red;
         position: relative;
         text-align: center;
+        margin-left: 5%;
+        text-wrap: nowrap;
     }
     #ourClient .feedback .card-group {
         display: flex;
         gap: 15px;
-        border: 2px solid blue;
         position: absolute;
         top: 120px;
 
@@ -202,6 +202,39 @@
         background-color: rgb(230, 22, 91);
         color: #fff;
         font-weight: 600;
+    }
+    #whoWeAre {
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        height: 80vh;
+
+    }
+    #whoWeAre > img {
+        width: 500px;
+        height: 500px;
+        margin-top: 90px;
+    }
+    #whoWeAre div h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: rgb(26, 26, 86);
+    }
+    #whoWeAre div p {
+        margin-bottom: 30px;
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+    #whoWeAre div .first {
+        margin-top: 20px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #555454;
+    }
+    #whoWeAre div .second {
+        color: #9c9c9c;
     }
 </style>
 
@@ -503,7 +536,7 @@
                     </div>
 
                 </div>
-                <div class="card">
+                <div class="card" style="margin-top: 20px;">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sit autem voluptatem totam repudiandae
                         optio cum porro, dolore, esse, modi 
@@ -540,6 +573,92 @@
             </div>
         </div>
     </section>
+
+    <section id="whoWeAre">
+        <img src="Images/who-we-are.png" alt="">
+        <div class="content">
+            <h5>
+                <img src="Icons/heading-before.png" alt="">
+                Who we Are
+            </h5>
+            <h1>Client-Centric Working Philosophy</h1>
+            <p class="first">Keeping up with the ever-changing digital space, we employ creative digital strategies and out of the box solutions to fulfill your digital needs.</p>
+            <p class="second">Every client we take on board is our partner, with whom we want to develop fruitful long-term business relationships. We can work as collaborative unit, in sync with the client input regularly. Some clients like to be involved more in the conceptualization, design and development phase and respecting that, we take client feedback and directions. Our design process can also be totally independent, if you want to give us the entire design freedom and want minimal interaction. End result is always about helping our clients achieve measurable results in all our focus areas.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="nav-section">
+                <div class="nav-brand">
+
+                </div>
+                <div class="nav-des">
+                    <p>
+                        We are a team of creative thinkers and problem solvers 
+                        dedicated to expanding the limits of what is possible by 
+                        helping brands achieve their goals. At logoknox, we utilize 
+                        our experience working with major global corporations
+                         to fuel creative innovation that delivers real results.
+                    </p>
+                </div>
+
+                <button>
+                    SELECT YOUR LOCATION
+                </button>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Combo Packages</a></li>
+                    <li><a href="">Process</a></li>
+                    <li><a href="">Faq</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="services">
+                <ul>
+                    <li><a href="">Logo Design</a></li>
+                    <li><a href="">Website Development</a></li>
+                    <li><a href="">Video Animation</a></li>
+                    <li><a href="">App Design</a></li>
+                    <li><a href="">Copywriting</a></li>
+                    <li><a href="">3D Illustration Design</a></li>
+                    <li><a href="">Marketing Collateral</a></li>
+                    <li><a href="">SEO Services</a></li>
+                </ul>
+            </div>
+
+            <div class="connected">
+                <div class="socials">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul>
+                    <li><i></i> 1-323-301-7709</li>
+                    <li><i></i> support@logoknox.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <p>Copywrite &copy; Logo knox - All right Reserved 2021</p>
+            </div>
+            <img src="Images/payment.png" alt="">
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li>-</li>
+                <li><a href="">Terms & Condition</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
