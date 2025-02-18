@@ -236,6 +236,104 @@
     #whoWeAre div .second {
         color: #9c9c9c;
     }
+    footer {
+        height: 60vh;
+        padding: 50px 100px 0;
+        background-color: #212a79;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    footer .footer-top {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    footer .footer-top .nav-section {
+        width: 350px;
+    }
+    footer .nav-links, footer .connected, footer .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    footer ul {
+        list-style: none;
+    }
+
+
+footer .footer-top a {
+    /* display: flex; */
+    text-decoration: none;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+footer .footer-top a img {
+    width: 50px;
+    height: 50px;
+}
+
+footer .footer-top a h5 {
+    font-weight: 600;
+    line-height: 0.8;
+    font-size: 1.5rem;
+}
+footer .footer-top  h4 {
+    color: gold;
+}
+footer .footer-top .nav-section .nav-des p {
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 20px 0;
+}
+footer .footer-top .nav-section button {
+    padding: 8px 25px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    color: #fff;
+    border: none;
+    margin-top: 50px;
+    font-weight: 600;
+}
+footer .footer-top .nav-section button:hover {
+    color: blue;
+}
+footer .footer-top .connected .socials div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #212a79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-top .connected .socials i {
+    font-size: 1.5rem;
+}
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+footer .footer-bottom ul {
+    display: flex;
+    justify-content: space-between; 
+    gap: 30px;
+    
+}
+footer .footer-bottom p {
+    color: #fff;
+    font-size: 0.8rem;
+}
+footer .footer-bottom ul a {
+    color: #fff;
+    text-wrap: nowrap;
+    font-size: 0.8rem;
+}
 </style>
 
 <body>
@@ -591,7 +689,13 @@
         <div class="footer-top">
             <div class="nav-section">
                 <div class="nav-brand">
-
+                    <a href="" style="display: flex;">
+                        <img src="./Icons/logo.png" alt="">
+                        <div>
+                            <h5>Web</h5>
+                            <h5>Predicate</h5>
+                        </div>
+                    </a>
                 </div>
                 <div class="nav-des">
                     <p>
@@ -609,6 +713,7 @@
             </div>
 
             <div class="nav-links">
+                <h4>LOGO KNOX</h4>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About us</a></li>
@@ -622,6 +727,7 @@
             </div>
 
             <div class="services">
+                <h4>SERVICES</h4>
                 <ul>
                     <li><a href="">Logo Design</a></li>
                     <li><a href="">Website Development</a></li>
@@ -635,15 +741,19 @@
             </div>
 
             <div class="connected">
-                <div class="socials">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <h4>STAY CONNECTED</h4>
+
+                <div class="socials" style="display: flex; gap: 10px;">
+                    <div><i class="ri-facebook-fill"></i></div>
+                    <div><i class="ri-twitter-fill"></i></div>
+                    <div><i class="ri-instagram-line"></i></div>
+                    <div><i class="ri-pinterest-line"></i></div>
+                    <div><i class="ri-youtube-fill"></i></div>
+
                 </div>
-                <ul>
-                    <li><i></i> 1-323-301-7709</li>
-                    <li><i></i> support@logoknox.com</li>
+                <ul style="color: #fff;">
+                    <li><i class="ri-phone-line" style="color: gold;"></i> 1-323-301-7709</li>
+                    <li><i class="ri-mail-line" style="color: gold;"></i> support@logoknox.com</li>
                 </ul>
             </div>
         </div>
