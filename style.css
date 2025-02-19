@@ -57,6 +57,12 @@
     font-weight: 600;
     line-height: 0.8;
 }
+header .main-header .menu {
+    display: none;
+}
+header .main-header .menu i {
+    font-size: 2rem;
+}
 
 .navLink .nav {
     display: flex;

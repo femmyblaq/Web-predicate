@@ -157,6 +157,7 @@
         font-weight: 900;
         color: rgb(26, 26, 86);
     }
+
     #ourClient .feedback h1 {
         font-size: 8rem;
         font-weight: 900;
@@ -167,6 +168,7 @@
         margin-left: 5%;
         text-wrap: nowrap;
     }
+
     #ourClient .feedback .card-group {
         display: flex;
         gap: 15px;
@@ -174,6 +176,7 @@
         top: 120px;
 
     }
+
     #ourClient .feedback .card {
         width: 230px;
         height: 200px;
@@ -182,16 +185,19 @@
         box-shadow: 5px 10px 15px #ccc;
         background-color: #fff;
     }
+
     #ourClient .feedback .card p {
         font-size: 0.8rem;
         text-align: justify;
 
     }
+
     #ourClient .feedback .card .card-bottom {
         display: flex;
         gap: 15px;
         margin-top: 20px;
     }
+
     #ourClient .feedback .card .profile {
         width: 40px;
         height: 40px;
@@ -203,6 +209,7 @@
         color: #fff;
         font-weight: 600;
     }
+
     #whoWeAre {
         background-color: #f4f4f4;
         display: flex;
@@ -212,128 +219,195 @@
         height: 80vh;
 
     }
-    #whoWeAre > img {
+
+    #whoWeAre>img {
         width: 500px;
         height: 500px;
         margin-top: 90px;
     }
+
     #whoWeAre div h1 {
         font-size: 2.5rem;
         font-weight: 900;
         color: rgb(26, 26, 86);
     }
+
     #whoWeAre div p {
         margin-bottom: 30px;
         font-size: 0.8rem;
         text-align: justify;
     }
+
     #whoWeAre div .first {
         margin-top: 20px;
         font-size: 1rem;
         font-weight: 700;
         color: #555454;
     }
+
     #whoWeAre div .second {
         color: #9c9c9c;
     }
+
     footer {
         height: 60vh;
-        padding: 50px 100px 0;
+        padding: 50px 100px 15px;
         background-color: #212a79;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
     footer .footer-top {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
     }
+
     footer .footer-top .nav-section {
         width: 350px;
     }
-    footer .nav-links, footer .connected, footer .services {
+
+    footer .nav-links,
+    footer .connected,
+    footer .services {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
+        /* align-items: center; */
+
     }
+
     footer ul {
         list-style: none;
     }
 
 
-footer .footer-top a {
-    /* display: flex; */
-    text-decoration: none;
-    align-items: center;
-    font-size: 0.8rem;
-    color: #fff;
-}
+    footer .footer-top a {
+        /* display: flex; */
+        text-decoration: none;
+        align-items: center;
+        font-size: 0.8rem;
+        color: #fff;
+    }
 
-footer .footer-top a img {
-    width: 50px;
-    height: 50px;
-}
+    footer .footer-top a img {
+        width: 50px;
+        height: 50px;
+    }
 
-footer .footer-top a h5 {
-    font-weight: 600;
-    line-height: 0.8;
-    font-size: 1.5rem;
-}
-footer .footer-top  h4 {
-    color: gold;
-}
-footer .footer-top .nav-section .nav-des p {
-    color: #fff;
-    font-size: 0.8rem;
-    margin: 20px 0;
-}
-footer .footer-top .nav-section button {
-    padding: 8px 25px;
-    border-radius: 20px;
-    background-color: antiquewhite;
-    color: #fff;
-    border: none;
-    margin-top: 50px;
-    font-weight: 600;
-}
-footer .footer-top .nav-section button:hover {
-    color: blue;
-}
-footer .footer-top .connected .socials div{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background-color: #fff;
-    color: #212a79;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer .footer-top .connected .socials i {
-    font-size: 1.5rem;
-}
-footer .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-footer .footer-bottom ul {
-    display: flex;
-    justify-content: space-between; 
-    gap: 30px;
-    
-}
-footer .footer-bottom p {
-    color: #fff;
-    font-size: 0.8rem;
-}
-footer .footer-bottom ul a {
-    color: #fff;
-    text-wrap: nowrap;
-    font-size: 0.8rem;
-}
+    footer .footer-top a h5 {
+        font-weight: 600;
+        line-height: 0.8;
+        font-size: 1.5rem;
+    }
+
+    footer .footer-top h4 {
+        color: gold;
+    }
+
+    footer .footer-top .nav-section .nav-des p {
+        color: #fff;
+        font-size: 0.8rem;
+        margin: 20px 0;
+    }
+
+    footer .footer-top .nav-section button {
+        padding: 8px 25px;
+        border-radius: 20px;
+        background-color: antiquewhite;
+        color: #fff;
+        border: none;
+        margin-top: 50px;
+        font-weight: 600;
+    }
+
+    footer .footer-top .nav-section button:hover {
+        color: blue;
+    }
+
+    footer .footer-top .connected .socials div {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #fff;
+        color: #212a79;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-top .connected .socials i {
+        font-size: 1.1rem;
+    }
+
+    footer .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .footer-bottom ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+    }
+
+    footer .footer-bottom p {
+        color: #fff;
+        font-size: 0.8rem;
+    }
+
+    footer .footer-bottom ul a {
+        color: #fff;
+        text-wrap: nowrap;
+        font-size: 0.8rem;
+    }
+
+    #chatbox .chat {
+        position: fixed;
+        /* z-index: 1; */
+        width: 60px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        color: #fff;
+        height: 60px;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    #chatbox .chat i {
+        font-size: 2rem;
+    }
+
+    @media (min-width: 350px) and (max-width: 450px) {
+        header .sub-header {
+            display: none;
+        }
+
+        header .main-header .navLink{
+            display: none;
+        }
+
+        header .main-header .menu{
+            display: block;
+        }
+        #LandingPage {
+            height: 50vh;
+        }
+        #LandingPage img{
+            height: 70%;
+        }
+        #LandingPage .content h1{
+            font-size: 1rem;
+        }
+
+    }
 </style>
 
 <body>
@@ -388,6 +462,10 @@ footer .footer-bottom ul a {
                     <li><button class="login">LOGIN</button></li>
                     <li><button class="help">HELP / SUPPORT CENTER</button></li>
                 </ul>
+            </div>
+
+            <div class="menu">
+                <i class="ri-menu-2-fill"></i>
             </div>
         </div>
     </header>
@@ -620,7 +698,7 @@ footer .footer-bottom ul a {
                 <div class="card">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sit autem voluptatem totam repudiandae
-                        optio cum porro, dolore, esse, modi 
+                        optio cum porro, dolore, esse, modi
                         tempore sint nostrum.</p>
 
                     <div class="card-bottom">
@@ -637,7 +715,7 @@ footer .footer-bottom ul a {
                 <div class="card" style="margin-top: 20px;">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sit autem voluptatem totam repudiandae
-                        optio cum porro, dolore, esse, modi 
+                        optio cum porro, dolore, esse, modi
                         tempore sint nostrum.</p>
 
                     <div class="card-bottom">
@@ -654,7 +732,7 @@ footer .footer-bottom ul a {
                 <div class="card">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sit autem voluptatem totam repudiandae
-                        optio cum porro, dolore, esse, modi 
+                        optio cum porro, dolore, esse, modi
                         tempore sint nostrum.</p>
 
                     <div class="card-bottom">
@@ -680,8 +758,37 @@ footer .footer-bottom ul a {
                 Who we Are
             </h5>
             <h1>Client-Centric Working Philosophy</h1>
-            <p class="first">Keeping up with the ever-changing digital space, we employ creative digital strategies and out of the box solutions to fulfill your digital needs.</p>
-            <p class="second">Every client we take on board is our partner, with whom we want to develop fruitful long-term business relationships. We can work as collaborative unit, in sync with the client input regularly. Some clients like to be involved more in the conceptualization, design and development phase and respecting that, we take client feedback and directions. Our design process can also be totally independent, if you want to give us the entire design freedom and want minimal interaction. End result is always about helping our clients achieve measurable results in all our focus areas.</p>
+            <p class="first">Keeping up with the ever-changing digital space, we employ creative digital strategies and
+                out of the box solutions to fulfill your digital needs.</p>
+            <p class="second">Every client we take on board is our partner, with whom we want to develop fruitful
+                long-term business relationships. We can work as collaborative unit, in sync with the client input
+                regularly. Some clients like to be involved more in the conceptualization, design and development phase
+                and respecting that, we take client feedback and directions. Our design process can also be totally
+                independent, if you want to give us the entire design freedom and want minimal interaction. End result
+                is always about helping our clients achieve measurable results in all our focus areas.</p>
+        </div>
+    </section>
+
+    <section id="chatbox">
+        <!-- <div class="close"></div>
+
+        <div class="customer-support">
+            <div class="avatar"></div>
+            <div class="message"></div>
+        </div>
+        
+        <div class="question">
+
+        </div>
+
+        <div class="tell-me"></div>
+        <form action="">
+            <input type="text">
+            <div></div>
+        </form> -->
+
+        <div class="chat">
+            <i class="ri-chat-smile-3-fill"></i>
         </div>
     </section>
 
@@ -699,11 +806,11 @@ footer .footer-bottom ul a {
                 </div>
                 <div class="nav-des">
                     <p>
-                        We are a team of creative thinkers and problem solvers 
-                        dedicated to expanding the limits of what is possible by 
-                        helping brands achieve their goals. At logoknox, we utilize 
+                        We are a team of creative thinkers and problem solvers
+                        dedicated to expanding the limits of what is possible by
+                        helping brands achieve their goals. At logoknox, we utilize
                         our experience working with major global corporations
-                         to fuel creative innovation that delivers real results.
+                        to fuel creative innovation that delivers real results.
                     </p>
                 </div>
 
@@ -743,7 +850,7 @@ footer .footer-bottom ul a {
             <div class="connected">
                 <h4>STAY CONNECTED</h4>
 
-                <div class="socials" style="display: flex; gap: 10px;">
+                <div class="socials" style="display: flex; gap: 10px; margin: 15px;">
                     <div><i class="ri-facebook-fill"></i></div>
                     <div><i class="ri-twitter-fill"></i></div>
                     <div><i class="ri-instagram-line"></i></div>
@@ -752,8 +859,10 @@ footer .footer-bottom ul a {
 
                 </div>
                 <ul style="color: #fff;">
-                    <li><i class="ri-phone-line" style="color: gold;"></i> 1-323-301-7709</li>
-                    <li><i class="ri-mail-line" style="color: gold;"></i> support@logoknox.com</li>
+                    <li style="font-size: 0.9rem;"><i class="ri-phone-line" style="color: gold;"></i> 1-323-301-7709
+                    </li>
+                    <li style="font-size: 0.9rem;"><i class="ri-mail-line" style="color: gold;"></i>
+                        support@logoknox.com</li>
                 </ul>
             </div>
         </div>
