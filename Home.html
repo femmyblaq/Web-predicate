@@ -389,6 +389,9 @@
         header .sub-header {
             display: none;
         }
+        header .main-header{
+            justify-content: space-between;
+        }
 
         header .main-header .navLink{
             display: none;
@@ -399,14 +402,72 @@
         }
         #LandingPage {
             height: 50vh;
+            border: 2px solid red ;
         }
         #LandingPage img{
-            height: 70%;
+            height: 100%;
+        }
+        #LandingPage .content {
+            width: 70%;
+            text-align: center;
         }
         #LandingPage .content h1{
+            font-size: 1.5rem;
+        }
+        #LandingPage .content p{
             font-size: 1rem;
         }
-
+        #AboutUs {
+            display: grid;
+            padding: 20px;
+        }
+        #AboutUs div {
+            width: 100%;
+        }
+        #AboutUs div > img {
+            width: 350px;
+        }
+        #AboutUs .content {
+            padding-bottom: 0;
+        }
+        #AboutUs .content h2 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        #Capabilities {
+            padding: 30px 20px;
+            display: grid;
+            height: 100%;
+        }
+        #Capabilities .content {
+            width: 100%;
+        }
+        #Capabilities .services {
+            display: grid;
+        }
+        #Capabilities .services a{
+            margin: 5px;
+        }
+        #Capabilities .services .group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #ourPortfolio h1 {
+            font-size: 1.7rem;
+        }
+        #ourPortfolio .tabs {
+            width: 90%;
+        }
+        #ourPortfolio .tabs ul {
+            flex-wrap: wrap;
+            /* padding: 0 10px; */
+        }
+        #ourPortfolio .tabs ul li {
+            flex: 1 1 30%;
+        }
+        #ourPortfolio .tabs ul li:nth-child(4), #ourPortfolio .tabs ul li:nth-child(5) {
+            flex: 1 1 50%;
+        } 
     }
 </style>
 
@@ -539,7 +600,7 @@
             <button>Get Start</button>
         </div>
         <div class="services">
-            <div>
+            <div class="group">
                 <a href="">
                     <div class="logo-design">
                         <img src="Icons/finest-icon1.png" alt="">
@@ -560,9 +621,9 @@
                         <h5>Video Animation</h5>
                     </div>
                 </a>
-            </div>
+            
 
-            <div style="margin-top: 70px;">
+            
                 <a href="">
                     <div class="mobile-app">
                         <img src="Icons/finest-icon4.png" alt="">
@@ -583,8 +644,9 @@
                         <h5>Digital Marketing</h5>
                     </div>
                 </a>
-            </div>
-            <div>
+            
+
+         
                 <a href="">
                     <div class="ill-design">
                         <img src="Icons/finest-icon7.png" alt="">
@@ -612,16 +674,16 @@
     <section id="ourPortfolio">
         <h5>
             <img src="Icons/heading-before.png" alt="">
-            Our capabilities
+            Our work
         </h5>
         <h1>Our work Porfolio</h1>
         <div class="tabs">
             <ul>
                 <li class="active">Logo</li>
-                <li>Website</li>
-                <li>Branding</li>
-                <li>Illustration</li>
-                <li>Video</li>
+                <li class="active">Website</li>
+                <li class="active">Branding</li>
+                <li class="active">Illustration</li>
+                <li class="active">Video</li>
             </ul>
         </div>
         <div class="tabs-content">
