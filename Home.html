@@ -452,6 +452,10 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
+        #ourPortfolio {
+            height: 100%;
+            padding: 5px 0;
+        }
         #ourPortfolio h1 {
             font-size: 1.7rem;
         }
@@ -463,11 +467,37 @@
             /* padding: 0 10px; */
         }
         #ourPortfolio .tabs ul li {
-            flex: 1 1 30%;
+            flex: 1 1 20%;
         }
         #ourPortfolio .tabs ul li:nth-child(4), #ourPortfolio .tabs ul li:nth-child(5) {
-            flex: 1 1 50%;
+            flex: 1 1 30%;
         } 
+        #ourPortfolio .tabs-content {
+            grid-template-columns: repeat(2, 1fr);
+            width: 95%;
+        }
+        #branding {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            height: 100%;
+            padding: 15px;
+        }
+        #branding div > img {
+            display: none;
+        }
+        #branding .brandPromo {
+            width: 300px;
+            height: 200px;
+        }
+        #branding .sub-brand  {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        #branding .sub-brand h4{
+            margin-top: 0 !important;
+        }
     }
 </style>
 
@@ -702,45 +732,44 @@
 
 
     <section id="branding">
-        <div>
+        <div class="sub-brand">
             <img style="width: 150px;" src="Images/combo-pack-branding.png" alt="">
-            <h4 style="margin-top: 30px;">LOGO</h4>
             <ul>
+                <h4 style="margin-top: 30px;">LOGO</h4>
                 <li>Unlimited Concepts</li>
                 <li>Unlimited Revisions</li>
             </ul>
-            <h4>WEBSITE</h4>
             <ul>
+                <h4>WEBSITE</h4>
                 <li>2 Concept</li>
                 <li>Unlimited pages</li>
             </ul>
-            <h4>STATIONERY</h4>
             <ul>
+                <h4>STATIONERY</h4>
                 <li>3 Concept</li>
                 <li>Unlimited Revisions</li>
             </ul>
         </div>
         <img class="brandPromo" src="Images/combo-image.png" alt="">
-        <div>
-            <h4>BROCHURE</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
             <ul>
+                <h4>BROCHURE</h4>
                 <li>3 Concepts with Unlimited Color Options
 
                     Unlimited Revisions</li>
             </ul>
-            <h4>BANNERS</h4>
             <ul>
+                <h4>BANNERS</h4>
                 <li>2 Concepts of any Standard Size
 
                     Unlimited Revisions</li>
             </ul>
-            <h4>SOCIAL MEDIA DESIGN</h4>
             <ul>
+                <h4>SOCIAL MEDIA DESIGN</h4>
                 <li>Any 3 of Your Choice
                     (Facebook, LinkedIn,
                     Twitter, YouTube)</li>
             </ul>
-
             <button>Order Now</button>
             <a href="">CLICK HERE FOR FREE CONSULTATION</a>
         </div>
