@@ -389,114 +389,283 @@
         header .sub-header {
             display: none;
         }
-        header .main-header{
+
+        header .main-header {
             justify-content: space-between;
         }
 
-        header .main-header .navLink{
+        header .main-header .navLink {
             display: none;
         }
 
-        header .main-header .menu{
+        header .main-header .menu {
             display: block;
         }
+
         #LandingPage {
             height: 50vh;
-            border: 2px solid red ;
+            border: 2px solid red;
         }
-        #LandingPage img{
+
+        #LandingPage img {
             height: 100%;
         }
+
         #LandingPage .content {
             width: 70%;
             text-align: center;
         }
-        #LandingPage .content h1{
+
+        #LandingPage .content h1 {
             font-size: 1.5rem;
         }
-        #LandingPage .content p{
+
+        #LandingPage .content p {
             font-size: 1rem;
         }
+
         #AboutUs {
             display: grid;
             padding: 20px;
         }
+
         #AboutUs div {
             width: 100%;
         }
-        #AboutUs div > img {
+
+        #AboutUs div>img {
             width: 350px;
         }
+
         #AboutUs .content {
             padding-bottom: 0;
         }
+
         #AboutUs .content h2 {
             font-weight: 700;
             font-size: 2rem;
         }
+
         #Capabilities {
             padding: 30px 20px;
             display: grid;
             height: 100%;
         }
+
         #Capabilities .content {
             width: 100%;
         }
+
         #Capabilities .services {
             display: grid;
         }
-        #Capabilities .services a{
+
+        #Capabilities .services a {
             margin: 5px;
         }
+
         #Capabilities .services .group {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
+
         #ourPortfolio {
             height: 100%;
             padding: 5px 0;
         }
+
         #ourPortfolio h1 {
             font-size: 1.7rem;
         }
+
         #ourPortfolio .tabs {
             width: 90%;
         }
+
         #ourPortfolio .tabs ul {
             flex-wrap: wrap;
             /* padding: 0 10px; */
         }
+
         #ourPortfolio .tabs ul li {
             flex: 1 1 20%;
         }
-        #ourPortfolio .tabs ul li:nth-child(4), #ourPortfolio .tabs ul li:nth-child(5) {
+
+        #ourPortfolio .tabs ul li:nth-child(4),
+        #ourPortfolio .tabs ul li:nth-child(5) {
             flex: 1 1 30%;
-        } 
+        }
+
         #ourPortfolio .tabs-content {
             grid-template-columns: repeat(2, 1fr);
             width: 95%;
         }
+
         #branding {
             display: grid;
             grid-template-columns: 1fr;
             justify-content: center;
             height: 100%;
-            padding: 15px;
+            padding: 25px 15px;
         }
-        #branding div > img {
+
+        #branding div>img {
             display: none;
         }
+
         #branding .brandPromo {
-            width: 300px;
+            width: 380px;
             height: 200px;
+            margin: 30px auto;
         }
-        #branding .sub-brand  {
+
+        #branding .sub-brand {
             display: flex;
             gap: 20px;
             justify-content: center;
         }
-        #branding .sub-brand h4{
+
+        #branding .sub-brand h4 {
             margin-top: 0 !important;
+        }
+
+        #branding .right-section {
+            margin: auto;
+        }
+
+        #branding .right-section ul {
+            /* width: 50%; */
+        }
+
+        #branding button {
+            width: 130px;
+            font-size: 16px;
+            margin: auto;
+        }
+
+        #branding a {
+            text-wrap: wrap;
+            text-align: center !important;
+        }
+
+        #ourClient {
+            display: grid;
+            padding: 10px;
+            height: 40vh;
+        }
+
+        #ourClient h1 {
+            font-size: 1.5rem;
+            text-wrap: nowrap;
+        }
+
+        #ourClient .feedback .card {
+            display: none;
+            width: auto;
+            height: auto;
+            border-radius: 0;
+            box-shadow: 1px 0 0 0 #ccc;
+        }
+
+        #ourClient .feedback h1 {
+            display: none;
+        }
+
+        #ourClient .feedback .card-group {
+            position: static;
+        }
+
+        #ourClient .feedback .card.active {
+            display: block;
+        }
+
+        #ourClient .feedback .card-track {
+            display: flex !important;
+            width: 100%;
+            height: 50px;
+            /* border-bottom: 1px solid #ddd; */
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        #ourClient .feedback .card-track div {
+            height: 15px;
+            width: 15px;
+            background-color: #9c9c9c;
+            border-radius: 10px;
+        }
+
+        #ourClient .feedback .card-track div.active {
+            background-color: #212a79;
+        }
+
+        #whoWeAre {
+            display: grid;
+            margin: 0;
+            height: 100%;
+            padding: 20px;
+        }
+
+        #whoWeAre>img {
+            margin: 0;
+            width: 350px;
+            height: 300px;
+        }
+
+        footer {
+            height: 100%;
+            padding: 15px;
+        }
+
+        footer .footer-top {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        footer .footer-top div {
+            flex: 1 1 100%;
+        }
+
+        footer .footer-top div:nth-child(2),
+        .footer-top div:nth-child(3) {
+            flex: 1 1 30%;
+        }
+
+        footer .footer-top .nav-section button {
+            display: none;
+        }
+
+        footer .footer-bottom {
+            display: grid;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        footer .connected .socials {
+            /* width: 60%; */
+            width: 50%;
+            margin: 15px 0 !important;
+        }
+
+        footer .connected .socials div {
+            width: 100% !important;
+            height: 100% !important;
+            padding: 15px;
+            border-radius: 50% !important;
+        }
+
+        footer .connected ul button {
+            padding: 8px 25px;
+            border-radius: 20px;
+            background-color: antiquewhite;
+            color: #fff;
+            border: none;
+            margin-top: 50px;
+            font-weight: 600;
         }
     }
 </style>
@@ -651,9 +820,9 @@
                         <h5>Video Animation</h5>
                     </div>
                 </a>
-            
 
-            
+
+
                 <a href="">
                     <div class="mobile-app">
                         <img src="Icons/finest-icon4.png" alt="">
@@ -674,9 +843,9 @@
                         <h5>Digital Marketing</h5>
                     </div>
                 </a>
-            
 
-         
+
+
                 <a href="">
                     <div class="ill-design">
                         <img src="Icons/finest-icon7.png" alt="">
@@ -751,7 +920,7 @@
             </ul>
         </div>
         <img class="brandPromo" src="Images/combo-image.png" alt="">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <div class="right-section" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
             <ul>
                 <h4>BROCHURE</h4>
                 <li>3 Concepts with Unlimited Color Options
@@ -770,8 +939,10 @@
                     (Facebook, LinkedIn,
                     Twitter, YouTube)</li>
             </ul>
-            <button>Order Now</button>
-            <a href="">CLICK HERE FOR FREE CONSULTATION</a>
+            <div style="display: grid; justify-content: center;">
+                <button>Order Now</button>
+                <a href="">CLICK HERE FOR FREE CONSULTATION</a>
+            </div>
         </div>
     </section>
 
@@ -786,7 +957,7 @@
         <div class="feedback">
             <h1>Our Client</h1>
             <div class="card-group">
-                <div class="card">
+                <div class="card active">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sit autem voluptatem totam repudiandae
                         optio cum porro, dolore, esse, modi
@@ -837,6 +1008,11 @@
                     </div>
 
                 </div>
+            </div>
+            <div class="card-track" style="display: none;">
+                <div class="active"></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
     </section>
@@ -954,6 +1130,10 @@
                     </li>
                     <li style="font-size: 0.9rem;"><i class="ri-mail-line" style="color: gold;"></i>
                         support@logoknox.com</li>
+
+                    <button>
+                        SELECT YOUR LOCATION
+                    </button>
                 </ul>
             </div>
         </div>
