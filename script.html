@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+</head>
+
+<style>
+    body {
+        color: blue;
+    }
+</style>
+
+<body>
+    <h1>
+        Welcome to Js
+    </h1>
+    <h1>This is JAvascript</h1>
+    <h1>This is JAvascript</h1>
+    <h1>This is JAvascript</h1>
+    <h1>This is JAvascript</h1>
+    <h1>This is JAvascript</h1>
+</body>
+<script>
+    let stName = "Lase"
+    let ltName = "Ogunmepon"
+
+    let fullName = stName + " " + ltName
+    const age = 19
+    let grade = 'B'
+    let height = 6.5
+    let isTall = false
+
+
+    stName = "Niyi"
+
+    document.write(`<h1>My name is ${stName} I'm 
+    ${age} years of age and I'm ${height} tall.</h1>`)
+
+    console.log("My age is: " + age * 2)
+    console.log(fullName)
+
+    // Arithmetic Operator
+    let a = 3
+    let b = 4
+    let c = 3
+    console.log(a + b + c)
+    console.log(a - b - c)
+    console.log(a * b * c)
+    console.log(Math.floor(a / c))
+    console.log("Ceil function", Math.ceil(a / c))
+    console.log(a % b)
+    console.log("Square function", Math.sqrt(a))
+    console.log("Random function", Math.floor((Math.random() + 1) * 20))
+    console.log("minimum function", Math.min(a, b))
+    console.log("maximum function", Math.max(a, b))
+
+    console.log((a ** b) + c)
+    // Unary Operator 
+    a++
+    b--  //3
+    a = a + 2
+    // a += 2  //19
+
+    // let result = ++a * ++b
+
+    // let result = (a-- * ++b) / 2 + --a + ++b
+
+    // console.log("result", result)
+    console.log("a: ", a)
+    console.log("b: ", b)
+    //Relational Operator
+    // > Greater than
+    // < Lesser than
+    // >= GE 
+    // <= LE 
+    // != NE 
+    // == Equal to 
+    // === Type check Equal to
+    let x = 5
+    let y = "5"
+    console.log("Greater than: ", a > b)
+    console.log("Lesser than: ", a < b)
+    console.log("Greater equal to", a >= b)
+    console.log("Lesser equal to", a <= b)
+    console.log("Not equal to", a != b)
+    console.log("equal to", x == y)
+    console.log("triple equal to", x === y)
+
+
+
+    //Logical Operator
+    // && AND 
+    // || OR 
+    // ! Not
+
+    // let studentName = prompt("Enter student name");
+    // let isAptechSt = true
+    // let city = "Ikeja"
+
+    // let firstLet = studentName.slice(0, 1).toUpperCase()
+    // let remLetters = studentName.slice(1, studentName.length).toLowerCase()
+    // let correctName = firstLet + remLetters
+
+    // console.log("My name in Uppercase:", correctName.length)
+
+    // let check = correctName === "Niyi" || 
+    //             correctName === "Promise" || 
+    //             correctName === "Tolu" && 
+    //             isAptechSt && 
+    //             city === "Ikeja"
+
+    // !check ? console.log("Access Granted") : 
+    //         console.log("Access is not granted!!")
+
+    //Ternary Operator
+    age >= 20 ? console.log("You are eligible to vote") :
+        console.log("Sorry you can't vote")
+
+
+    // if statement 
+    // let score = prompt("Enter first score:")
+    // let score2 = prompt("Enter second score:")
+    // let score3 = prompt("Enter third score:")
+    // let score4 = prompt("Enter fourth score:")
+    // let score5 = prompt("Enter last score:")
+
+    // let sum = Number(score) + Number(score2) + Number(score3) + Number(score4) +Number(score5)
+    // let avg = sum / 5
+    // console.log(sum)
+    // console.log(avg)
+    // if (avg >= 90) {
+    //     console.log("Your are doing excellent!")
+    // }else if (avg >= 70 && avg < 90) {
+    //     console.log("Your are doing very good!")
+    // }else if (avg >= 50 && avg < 70) {
+    //     console.log("Average performance!")
+    // }
+    // else {
+    //     console.log("You need to work harder!")
+    // }
+    // let body = document.querySelector("body")
+
+    // let enterColor = prompt("Enter a color name or the first alphabet of a color name:");
+    // switch(enterColor) {
+    //     case 'r':
+    //     case 'R':
+    //     case 'red': 
+    //         console.log("Red color was entered");
+    //         document.body.style.backgroundColor = '#f00'; 
+    //         document.body.style.color = 'white'
+    //     break
+    //     case 'b':
+    //     case 'B':
+    //     case 'blue': 
+    //         console.log("Blue color was entered");
+    //         document.body.style.backgroundColor = '#00f';
+    //         document.body.style.color = 'white'
+    //     break;
+    //     default: document.body.style.backgroundColor = '#000';
+    //         document.body.style.color = 'white'
+    // } 
+
+    //Loop Construct
+    // for loop
+    // for(var i = 1; i <=50; i+=2 ){
+    //     document.write("<h2>Hey there! I'm for Loop.. " +i+"</h2>")
+    //     for(var j = 1; j <5; j++) {
+    //         document.write("<h2>Hey there! I'm nested for Loop.. " +j+"</h2>")
+    //     }
+    // } 
+    // while loop 
+    document.write("----------------------------------WHILE LOOP------------------------------------------------------------------------------------------------------------- ")
+    var p = 30;
+    while (p >= 1) {
+        document.write("<h2>Hey there! I'm While Loop.. " + p + "</h2>")
+        p--
+    }
+    document.write("----------------------------------DO WHILE LOOP------------------------------------------------------------------------------------------------------------- ")
+
+    // do while 
+    // var t = 20
+    //     do {
+    //         document.write("<h2>Hey there! I'm Do While Loop.. " +t+"</h2>")
+    //         t--
+    //     }while(t >=1)
+    // var pin = 1234;
+    // var trial = 1
+    // do{
+    // var enterPin = Number(prompt("Enter the correct pin:"))
+    // if(trial > 3 ) {
+    //     alert("You have tried too many times, try again in 5mins time");
+    //     break
+    // }
+    // trial++
+
+    // }while(enterPin != pin)
+
+
+    // for in loop
+    // for of
+
+
+    // for(var tck = 1; tck <=20; tck++) {
+
+    //     if (tck % 2 === 0 && tck % 3 === 0) {
+    //         document.write("<h2>Hello World</h2>")
+    //     }
+    //     else if(tck % 2 === 0) {
+    //         document.write("<h2>Hello</h2>")
+    //     }else if(tck % 2 != 0){ 
+    //         document.write("<h2>" + "world" + "</h2>");
+    //     }
+    //     else {
+    //         document.write("<h2>" + tck + "</h2>");
+    //    }
+    // }
+
+    // Array 
+    const cars = ["Cyber Truck", "Rolls Royce", "Maybach", "Lambo"]
+    const year = []
+    cars.push("Ferrari")
+    cars.push("BMW")
+
+    var ct = 1
+    // while (ct <= 5) {
+    //     const carName = prompt("Enter car name: ");
+
+    //     cars.push(carName);
+
+    //     ct++
+    // }
+
+
+    // cars.pop("BMW");
+    // cars.shift();
+    // cars.unshift("BMW");
+    // cars.sort();
+
+
+
+
+
+    // console.log(cars[0])
+
+    // for(var tck = 0; tck <=cars.length -1; tck++) {
+    // document.write(`<h2>${tck} - ${cars[tck]}</h2>`)
+    // }
+
+
+    // const h1s = document.querySelectorAll("h1")
+    // const numbers = [25, 18, 34, 26, 21, 40, 13, 15]
+    // numbers.forEach((num) => {
+    //     console.log("This is my Foreash", num);     
+    // })
+
+    // console.log(h1s)
+
+    // // Array Higher Order Function 
+    // // Filter 
+    // const extractNumber =  numbers.filter(n => {
+    //     return n <= 20
+    // })
+
+    // //Map 
+    // const mulByTwo = numbers.map(n => {
+    //     return n*2
+    // })
+
+
+
+    // const sortMyArray = numbers.sort((a, b) => b - a)
+
+
+
+    // console.log(extractNumber)
+    // console.log(mulByTwo.sort((a, b) => a - b))
+    // console.log(numbers.find(n => n > 50))
+
+    // //Object
+    // let date = new Date()
+
+    // const st1 = {
+    //     firstName: "Promise",
+    //     lastName: "Santos",
+    //     contact: {
+    //         mail: "iampromise@gmail.com",
+    //         phone: "091 345 84 336"
+    //     },
+    //     courseEnrolled: ["SE", "AI/ML", "Cyber Security"],
+    //     enrollmentDate: date.getdate,
+    //     Nationality: "Nigeria"
+
+    // }
+
+    // let ftName = prompt("Enter your given name: ")
+    // let lastName = prompt("Enter your last name: ")
+    // let phContact = prompt("Enter your phone number")
+    // let mlContact = prompt("Enter your email")
+    // let course1 = prompt("Enter first choice") 
+    // let course2 = prompt("Enter second choice") 
+    // let course3 = prompt("Enter third choice") 
+    // let country = prompt("Enter your country")
+
+    // const st2 = {
+    //     firstName: ftName,
+    //     lastName: lastName,
+    //     contact: {
+    //         mail: mlContact,
+    //         phone: phContact
+    //     },
+    //     courseEnrolled: [course1, course2, course3],
+    //     enrollmentDate: date.getdate,
+    //     Nationality: country
+    // }
+
+    // // While creating the object for st2, on the courseEnrolled make sure each course is unique!
+
+
+    // console.log("My Object", st2);
+
+    // document.write(`Hi, my name is 
+    // ${st1.firstName} ${st1.lastName}
+    // I enrolled for the course of 
+    // ${st1.courseEnrolled[2].toLowerCase()}
+    //`)
+        let num1 = +prompt("Enter number: ")
+        let num2 = +prompt("Enter another number: ")
+        let num3 = +prompt("Enter another number: ")
+        let operator = prompt("Enter what operation you what to perform:")
+        let result;
+    // Function 
+    const calculate = (num1, num2, num3, operator) => {
+
+        switch(operator) {
+            case '+':
+                result = num1 + num2 + num3
+                 return result
+            break
+            case '-':
+                result = num1 - num2 - num3
+                return result
+                break
+            case '*':
+                result = num1 * num2 * num3
+                return result
+                break
+            case '**':
+
+                result = num1 ** num2 ** num3
+                return result
+                break
+            case '/':
+                result = num1 / num2 / num3
+                return result
+                break
+        }
+
+    }
+
+
+
+    const calcFunction =  calculate(num1, num2, num3, operator)
+    console.log("Here's your result", calcFunction);
+
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        /* Create a simple banking function that asks for a user details(name, acc, pin)
+            where each user have a default balance of 4000. When making a transaction
+            ask the user if he/she is making a withdrawal or deposit manipulating the balance
+            depending on which operation is performed.  */
+
+             const bankTrans = () => {
+                const userName = prompt("Enter username: ")
+                const userAcc = prompt("Enter user account number: ")
+                const setPin = +prompt("Set a pin: ")
+                let balance;
+                if(userName && userAcc && setPin) {
+                    balance = 4000
+                    const choice = prompt("Do you want to make a transaction (y/n): ")
+                    switch(choice) {
+                        case 'y':
+                        case 'Y':
+                        case 'yes':
+                        case 'YES':
+                            let trans = prompt("Deposit or Withdraw  (d/w): ")
+                            switch(trans){
+                                case 'd':
+                                case 'D':
+                                    let amountAdd = +prompt("How much do you want to add: ")
+                                        let enterPin = +prompt("Enter pin: ")
+                                        if(enterPin === setPin) {
+                                            balance +=amountAdd
+                                            alert("Transaction was successful!!!")
+                                        }else{
+                                            alert("Incorrect pin!!")
+                                        }
+                                break
+                                case 'w':
+                                case 'W':
+                                    let amountWithdraw = +prompt("How much do you want to withdraw: ")
+                                    if(amountWithdraw > balance) {
+                                        alert("Insufficient Fund!!")
+                                    }else {
+                                        let enterPin = +prompt("Enter pin: ")
+                                        if(enterPin === setPin) {
+                                            balance -=amountWithdraw
+                                            alert("Transaction was successful!!!")
+                                        }else{
+                                            alert("Incorrect pin!!")
+                                        }
+                                    }
+                                break
+                                default: alert("Invalid input! Provide the correct input (d/w)")
+                            }
+                        break
+                        case 'n':
+                        case 'N':
+                        case 'no':
+                        case 'NO':
+                            alert("Thank you for your time.")
+                        default: alert("The option entered is not valid, enter (y/n).")
+                    }
+
+                }
+
+                document.write(`<h2>Account Name:  ${userName}</h2>`)
+                document.write(`<h2>Available balance:  ₦${balance}</h2>`)
+             }
+
+             bankTrans()
+
+
+            //  DOM Manipulation 
+    </script>
+</body>
+
+</html>
