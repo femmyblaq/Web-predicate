@@ -57,9 +57,11 @@
     font-weight: 600;
     line-height: 0.8;
 }
+
 header .main-header .menu {
     display: none;
 }
+
 header .main-header .menu i {
     font-size: 2rem;
 }
@@ -70,12 +72,15 @@ header .main-header .menu i {
     gap: 10px;
     list-style: none;
 }
+
 .navLink .nav .service {
     position: relative;
 }
-.navLink .nav .service:hover .service-dropdown{
+
+.navLink .nav .service:hover .service-dropdown {
     display: block;
 }
+
 .navLink .nav .service .service-dropdown {
     position: absolute;
     list-style: none;
@@ -86,24 +91,30 @@ header .main-header .menu i {
     display: none;
     z-index: 1;
 }
-.service .service-dropdown ul{
+
+.service .service-dropdown ul {
     list-style: none;
 }
-.service .service-dropdown ul li{
+
+.service .service-dropdown ul li {
     padding: 5px 15px;
     text-wrap: nowrap;
     border-bottom: 2px solid #ccc;
 }
+
 .service .service-dropdown ul li:hover {
     background-color: rgb(30, 3, 181);
 }
-.service .service-dropdown ul li:hover a{
+
+.service .service-dropdown ul li:hover a {
     color: #fff;
 }
+
 .service .service-dropdown ul li a {
     font-size: 0.6rem;
     font-weight: 600;
 }
+
 .navLink a {
     font-size: 0.8rem;
     font-weight: 600;
@@ -128,6 +139,9 @@ header .main-header .menu i {
     background-color: rgb(241, 205, 5);
 }
 
+.slide-menu {
+    display: none;
+}
 
 
 #LandingPage {
@@ -136,16 +150,43 @@ header .main-header .menu i {
     display: flex;
     place-items: center;
 }
+#LandingPage .slides {
+    border: 2px solid red;
+    height: 100%;
+}
+#LandingPage .slides .active {
+    display: block;
 
-#LandingPage img {
+}
+#LandingPage .slides img {
     width: 100%;
     position: absolute;
+}
+#LandingPage .slides .my-img {
+    display: none;
+
+}
+#LandingPage .slides .my-img.active {
+    display: block;
+
+}
+#LandingPage .content-group {
+    border: 2px solid green;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#LandingPage .content.active {
+    display: block;
+
 }
 
 #LandingPage .content {
     position: absolute;
     width: 50%;
     color: #fff;
+    display: none;
     /* transform: translateY(50%);
     top: 15%;*/
     left: 65px;
@@ -281,7 +322,8 @@ header .main-header .menu i {
     margin: 20px;
 }
 
-#Capabilities .services .logo-design:hover, .web-dev:hover,
+#Capabilities .services .logo-design:hover,
+.web-dev:hover,
 .video-animation:hover,
 .mobile-app:hover,
 .creative-copy:hover,
@@ -291,5 +333,3 @@ header .main-header .menu i {
 .seo-services:hover {
     border-top: 3px solid tomato;
 }
-
-

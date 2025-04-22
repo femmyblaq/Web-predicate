@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .iconsBox  {
+        position: absolute;
+        width: 300px;
+        height:200px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 5px #ccc;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .iconsBox div {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .messageBox {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        /* top: 0; */
+        display: none;
+        margin: auto;
+        /* justify-content: center; */
+        /* align-items: center;  */
+        place-items: center;
+        transition: all 200ms ease-in;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .messageBox div {
+        width: 300px;
+        height:200px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 5px #ccc;
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        margin: auto;
+        margin-top: -200px;
+        transition: all 200ms ease-in;
+        /* gap: 15px; */
+    }
+    i{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    h2 {
+        font-family: sans-serif;
+    }
+</style>
+
+<body>
+    <div class="iconsBox">
+        <h1>Kindly rate our website!</h1>
+        <div>
+
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+        </div>
+    </div>
+
+    <div class="messageBox">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+</body>
+<script>
+    const icons = document.querySelectorAll("i");
+    const h2 = document.querySelector("h2");
+    const messageBox = document.querySelector(".messageBox");
+    const div = document.querySelector(".messageBox div");
+
+    console.log(icons)
+    let message;
+    icons.forEach((icon, i) => {
+        icon.addEventListener("click", ()=>{
+            //console.log("This is coming from outer foreach..." + i)
+            div.style.marginTop = "auto"
+            switch(i) {
+                case 0:
+                    // message 
+                    messageBox.style.display = "flex"
+                    h2.textContent ="Poor response, kindly let us know how we can improve.."
+                break
+                case 1:
+                    // message 
+                    messageBox.style.display = "flex"
+                    h2.textContent ="Seems you don't like our website, kindly let us know how we can improve.."
+                break
+                case 2:
+                    // message 
+                    messageBox.style.display = "flex"
+                    h2.textContent ="Good reponse, kindly let us know how we can improve.."
+                break
+                case 3:
+                    // message 
+                    messageBox.style.display = "flex"
+                    h2.textContent ="Good reponse, kindly let us know how we can improve.."
+                break
+                case 4:
+                    // message 
+                    messageBox.style.display = "flex"
+                    h2.textContent ="Good reponse, kindly let us know how we can improve.."
+                break
+                }
+
+            icons.forEach((star, index) => {
+                //console.log("This is coming from inner foreach..." + index)
+
+                if(index <= i) {
+                    star.className = "ri-star-fill"
+                }else{
+                    star.className = "ri-star-line"
+                }
+            }) 
+        })
+    })
+</script>
+</html>

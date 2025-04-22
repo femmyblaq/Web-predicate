@@ -8,8 +8,10 @@
 </head>
 
 <body>
-
-
+    
+    <h1>This is DOM Manipulation!!</h1>
+    
+    <button class="myBtn">click me</button>
 
     <script>
         /* Create a simple banking function that asks for a user details(name, acc, pin)
@@ -75,10 +77,44 @@
                 document.write(`<h2>Available balance:  ₦${balance}</h2>`)
              }
 
-             bankTrans()
+             //bankTrans()
 
 
             //  DOM Manipulation 
+             const btn = document.querySelector(".myBtn");
+             const h1 = document.querySelector("h1");
+
+             console.log(h1)
+             h1.addEventListener('mouseenter', ()=> {
+                h1.style.color = "red";
+             })
+
+
+             h1.addEventListener('mouseleave', ()=> {
+                h1.style.color = "#000";
+             })
+
+             let isClicked;
+             btn.addEventListener('click', ()=> {
+
+                if(isClicked) {
+                    h1.innerHTML = "This is DOM Manipulation.."
+                    document.body.style.backgroundColor = "#fff"
+
+                    isClicked = false
+                    console.log(isClicked)
+                    
+                }else {
+                    h1.innerHTML = "<ol><li>Yeah, I got Clickedd!!</li><li>Yeah, This is me again..</li></ol>"
+                    document.body.style.backgroundColor = "#0f0"
+
+                    isClicked = true
+
+                    console.log(isClicked)
+                }
+                
+            })
+
     </script>
 </body>
 

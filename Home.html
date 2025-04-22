@@ -392,11 +392,137 @@
 
         header .main-header {
             justify-content: space-between;
+            position: relative;
         }
 
         header .main-header .navLink {
             display: none;
         }
+
+        header .slide-menu {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            background: #212a79;
+            z-index: 11;
+            top: 0;
+            right: -500px;
+            transition: right 500ms ease-in-out;
+        }
+
+        header .slide-menu .menu {
+            width: 100vw;
+            display: flex;
+            justify-content: end;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+
+        header .slide-menu .menu i {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        /* -----  */
+        .slide-menu .nav {
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px; */
+            list-style: none;
+            text-align: center;
+        }
+
+        .slide-menu .nav li {
+            /* margin: 10px 0; */
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .slide-menu .nav li button {
+            width: 100%;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .slide-menu .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .slide-menu .nav .service {
+            position: relative;
+        }
+
+        .slide-menu .nav .service:hover .service-dropdown {
+            display: block;
+        }
+
+        .slide-menu .nav .service .service-dropdown {
+            position: absolute;
+            list-style: none;
+            /* width: 250px; */
+            top: 20px;
+            background-color: #edecec;
+            border-radius: 5px;
+            display: none;
+            z-index: 1;
+        }
+
+        .service .service-dropdown ul {
+            list-style: none;
+        }
+
+        .service .service-dropdown ul li {
+            padding: 5px 15px;
+            text-wrap: nowrap;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .service .service-dropdown ul li:hover {
+            background-color: rgb(30, 3, 181);
+        }
+
+        .service .service-dropdown ul li:hover a {
+            color: #fff;
+        }
+
+        .service .service-dropdown ul li a {
+            font-size: 0.6rem;
+            font-weight: 600;
+        }
+
+        .slide-menu {
+            display: block;
+        }
+
+        .slide-menu a {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .slide-menu a:hover {
+            color: rgb(42, 42, 250);
+        }
+
+        .slide-menu button {
+            padding: 10px 15px;
+            border: none;
+        }
+
+
+        .slide-menu .login {
+            background-color: rgb(243, 69, 39);
+        }
+
+        .slide-menu .help {
+            background-color: rgb(241, 205, 5);
+        }
+
+        /* --------- */
 
         header .main-header .menu {
             display: block;
@@ -728,17 +854,74 @@
                 <i class="ri-menu-2-fill"></i>
             </div>
         </div>
+        <div class="slide-menu">
+            <div class="menu">
+                <i class="ri-menu-2-fill"></i>
+            </div>
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li class="service">
+                    <a href="">
+                        Services <i class="ri-arrow-down-s-fill"></i>
+                    </a>
+
+                    <div class="service-dropdown">
+                        <ul>
+                            <li><a href="">LOGO DESIGN</a></li>
+                            <li><a href="">WEBSITE DEVELOPMENT</a></li>
+                            <li><a href="">VIDEO ANIMATION</a></li>
+                            <li><a href="">3D ILLUSTRATION DESIGN</a></li>
+                            <li><a href="">CREATIVE COPYWRITING</a></li>
+                            <li><a href="">DIGITAL MARKETING</a></li>
+                            <li><a href="">APP DESIGN</a></li>
+                            <li><a href="">MARKETING COLLATERAL</a></li>
+                            <li style="border-bottom: none;"><a href="">SEO SERVICES</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Combo packages</a></li>
+                <li><a href="">Process</a></li>
+                <li><a href="">Contact</a></li>
+                <li style="padding: 0; border-bottom: none;"><button class="login">LOGIN</button></li>
+                <li style="padding: 0; border-bottom: none;"><button class="help">HELP / SUPPORT CENTER</button></li>
+            </ul>
+        </div>
     </header>
 
 
     <section id="LandingPage">
-        <img src="Images/home-banner2.jpg" alt="">
-        <div class="content">
-            <h1>Innovative Logo Design & Branding Solution</h1>
-            <p>We are commited towards providing professional
-                logo design tailored to your brand culture core
-                value and disinction.</p>
-            <button>Get Started</button>
+        <div class="slides">
+            <img class="my-img active" src="Images/home-banner2.jpg" alt="">
+            <img class="my-img" src="Images/home-banner1.jpg" alt="">
+            <img class="my-img" src="Images/home-web-banner.jpg" alt="">
+
+        </div>
+        <div class="content-group">
+
+            <div class="content active">
+                <h1>Innovative Logo Design & Branding Solution</h1>
+                <p>We are commited towards providing professional
+                    logo design tailored to your brand culture core
+                    value and disinction.</p>
+                <button>Get Started</button>
+            </div>
+            <div class="content">
+                <h1>Innovative Logo Design & Branding Solution</h1>
+                <p>We are commited towards providing professional
+                    logo design tailored to your brand culture core
+                    value and disinction.</p>
+                <button>Get Started</button>
+            </div>
+            <div class="content">
+                <h1>Innovative Logo Design & Branding Solution</h1>
+                <p>We are commited towards providing professional
+                    logo design tailored to your brand culture core
+                    value and disinction.</p>
+                <button>Get Started</button>
+            </div>
         </div>
         <div class="nav-buttons">
             <button class="prev"><i class="ri-arrow-left-s-line"></i></button>
@@ -1150,5 +1333,6 @@
         </div>
     </footer>
 </body>
+<script src="app.js"></script>
 
 </html>
